@@ -1,0 +1,23 @@
+{
+  "name": "require-js-example",
+  "authors": [
+    "Joe Madich <joe@devcorr.com>"
+  ],
+  "description": "requirejs learning",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.2",
+    "text": "requirejs-text#^2.0.15",
+    "require-handlebars-plugin": "^1.0.0"
+  }
+}
