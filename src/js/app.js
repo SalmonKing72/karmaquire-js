@@ -2,18 +2,22 @@
 define('app', function (require, exports, module) {
     var $ = require('jquery');
     var tasks = require('tasks');
+    var logger = require('logger');
     
     //private members prefixed with underscore.
     function _addTask() {
         tasks.add();
+        logger.add('new task added');
     }
     
     function _deleteAllTasks() {
         tasks.clear();
+        logger.add('all tasks cleared');
     }
     
     function _saveChanges() {
         tasks.save();
+        logger.add('new task saved');
     }
     
     function _cancelChanges() {
@@ -21,10 +25,12 @@ define('app', function (require, exports, module) {
     }
     
     function _deleteTask(clickEvent) {
-        tasks.remove(clickEvent)
+        tasks.remove(clickEvent);
+        logger.add('task removed');
     }
     
-    function _registerEventHandlers() {
+    //public members do not have underscore prefix
+    function registerEventHandlers() {
         $("#new-task-button").on("click", _addTask);
         $("#delete-all-button").on("click", _deleteAllTasks);
         $("#save-button").on("click", _saveChanges);
@@ -34,7 +40,8 @@ define('app', function (require, exports, module) {
     
     //assign public members to exports to be returned.
     exports.init = function () {
-        _registerEventHandlers();
+        registerEventHandlers();
+        logger.clear();
         tasks.render();
     }
 });

@@ -9,4 +9,4 @@
     
 * build app using
     * `node build/r.js -o build/build.config.js`
-    * pull up index.html a browser.
+    * pull up index.html in a browser.

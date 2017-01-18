@@ -18,6 +18,7 @@
   "dependencies": {
     "requirejs": "^2.3.2",
     "text": "requirejs-text#^2.0.15",
-    "require-handlebars-plugin": "^1.0.0"
+    "require-handlebars-plugin": "^1.0.0",
+    "jquery": "^3.1.1"
   }
 }

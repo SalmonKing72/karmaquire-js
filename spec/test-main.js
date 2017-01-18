@@ -17,11 +17,10 @@ require.config({
     baseUrl: '/base',
 
     paths: {
-        jquery: 'src/js/jquery-2.1.1.min',
+        jquery: 'src/bower_components/jquery/dist/jquery.min',
         text: 'src/bower_components/text/text',
         templates: 'src/templates',
-        hbs: 'src/bower_components/require-handlebars-plugin/hbs',
-        Squire: 'src/bower_components/Squire.js/src/Squire'
+        hbs: 'src/bower_components/require-handlebars-plugin/hbs'
     },
 
     // dynamically load all test files
