@@ -1,8 +1,5 @@
 {
   "name": "require-js-example",
-  "authors": [
-    "Joe Madich <joe@devcorr.com>"
-  ],
   "description": "requirejs learning",
   "main": "",
   "license": "MIT",
